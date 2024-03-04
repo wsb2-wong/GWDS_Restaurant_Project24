@@ -5,25 +5,17 @@
 body {
   padding-top: 0rem;
   padding-bottom: 3rem;
-  color: rgb(var(--bs-tertiary-color-rgb));
-}
-
-.name{
-  text-align: center;
-  margin-bottom: -15px; padding-bottom: 0;
+  background-color: #e1ff7f;
 }
 
 .section-one,
 .section-two,
 .section-three {
-  background-color: #e1ff7f;
   display: flex;
   justify-content: center;
   align-items: center;
   text-align: center;
 }
-
-
 
 .section-one .card-text,
 .section-two .card-text {
