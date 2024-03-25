@@ -34,12 +34,68 @@ body {
   border: 10px solid #febd2e;
 }
 
+
+@media (min-width: 768px) {
+  .mon-size {
+    font-size: 68px; /* Adjust the font size as needed */
+  }
+}
+
+@media (max-width: 576px) {
+  .mon-size {
+    font-size: 46px; /* Adjust the font size as needed */
+  }
+}
+
+@media (max-width: 576px) {
+  .section-two .card-text{
+    font-size: 20px; /* Adjust the font size as needed */
+  }
+}
+
+@media (min-width: 768px) {
+  .section-two .card-text {
+    font-size: 25px; /* Adjust the font size as needed */
+  }
+}
+
+h2, h3, h4, h5, h6, .menu{
+  font-family: "cooper-black-std", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
 h2, h3,h13, h14{
   color: #febd2e;
 }
 
+h,p, .navbar li{
+  font-family: "baileywick-jf-gothic", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.navbar li{
+  font-size: large;
+}
+
+.section-two p{
+  font-size: large;
+}
+
+.card .card-text,
+.lead{
+  line-height: 1.8;;
+}
+
+.title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .section-one .card-text,
-.section-two .card-text {
+.section-two .card-text{
   display: flex;
   justify-content: center;
   align-items: center;
@@ -170,6 +226,9 @@ h7,h8,h9,h10,h11,h12{
   .carousel-caption p {
     font-size: 18px;
   }
+
+
+
 
   @media (max-width: 576px) {
     #theme-photo {
