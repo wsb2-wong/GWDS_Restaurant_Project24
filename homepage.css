@@ -34,56 +34,32 @@ body {
   border: 10px solid #febd2e;
 }
 
-@media (max-width: 576px) {
-  .navbar-brand img {
-    width: 10%; /* Adjust the width as needed */
-    height: 5%
-  }
-}
 
-@media (min-width: 768px) {
-  .mon-size {
-    font-size: 68px; /* Adjust the font size as needed */
-  }
-}
 
-@media (max-width: 576px) {
-  .mon-size {
-    font-size: 46px; /* Adjust the font size as needed */
-  }
-}
-
-@media (max-width: 576px) {
-  .section-two .card-text{
-    font-size: 20px; /* Adjust the font size as needed */
-  }
-}
-
-@media (min-width: 768px) {
-  .section-two .card-text {
-    font-size: 25px; /* Adjust the font size as needed */
-  }
-}
-
-h2, h3, h4, h5, h6, h13, .card-body a, .menu, .navbar li{
+h2, h4, h5, h6, h13, h20, .card-body a, .menu, .navbar li{
   font-family: "cooper-black-std", serif;
   font-weight: 400;
   font-style: normal;
 }
+
 
 .card-body a,
 .menu a{
   font-size: medium;
 }
 
-h2, h3,h13, h14{
+h2,h13, h14, h20{
   color: #febd2e;
 }
 
-h,p, .nav-item-footer .nav-link{
+h,p, h15, .nav-item-footer .nav-link{
   font-family: "baileywick-jf-gothic", sans-serif;
   font-weight: 400;
   font-style: normal;
+}
+
+h15{
+  font-size: x-large;
 }
 
 .navbar li{
@@ -124,10 +100,28 @@ h3{
   font-size: xx-large;
 }
 
+
 h4,
 h5,
 h6{
   font-size: xx-large;
+}
+
+.seasonable-menu{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+h20{
+  font-size: x-large;
+}
+
+.seasonable-menu p{
+  font-size: large;
+  color: #fff;
+  text-shadow: none;
 }
 
 .row-featurette{
@@ -194,25 +188,32 @@ h7,h8,h9,h10,h11,h12{
 
 .card img{
   width: 90%;
+  height: 80%;
   display: block;
   margin: 10px auto;
   border-radius: 3%;
 }
 
-  .footer{
-    color: white;
-    margin: 0%;
-  }
+.card-body .btn,
+.menu .btn{
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.footer{
+  color: white;
+  margin: 0%;
+}
 
 
-  .float-end a {
-    color: white;
-    text-decoration: none;
-  }
-  
-  .float-end:hover {
-    color: #febd2e;
-  }
+.float-end a {
+  color: white;
+  text-decoration: none;
+}
+
+.float-end:hover {
+  color: #febd2e;
+}
+
  
   h13{
     color: #febd2e;
@@ -237,9 +238,64 @@ h7,h8,h9,h10,h11,h12{
   .carousel-caption p {
     font-size: 18px;
   }
+  
+  .carousel-control-prev,
+  .carousel-control-next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 10%;
+    z-index: 10;
+  }
+  
+  .carousel-control-prev-icon,
+  .carousel-control-next-icon {
+    width: 100%;
+    height: 100%;
+  }
+  
+  @media (max-width: 576px) {
+    .carousel-control-prev,
+    .carousel-control-next {
+      width: 15%; /* Adjust the width as needed */
+    }
+  }
 
+  nav .navbar-brand img {
+    width: 70px; /* Adjust the width as needed */
+    height: 70px; /* Adjust the height as needed */
+  }
+  
+  @media (max-width: 576px) {
+    nav .navbar-brand img {
+      width: 70px; /* Keep the original width */
+      height: 70px; /* Keep the original height */
+    }
+  }
 
-
+  @media (min-width: 768px) {
+    .mon-size {
+      font-size: 68px; /* Adjust the font size as needed */
+    }
+  }
+  
+  @media (max-width: 576px) {
+    .mon-size {
+      font-size: 46px; /* Adjust the font size as needed */
+    }
+  }
+  
+  @media (max-width: 576px) {
+    .section-two .card-text{
+      font-size: 20px; /* Adjust the font size as needed */
+    }
+  }
+  
+  @media (min-width: 768px) {
+    .section-two .card-text {
+      font-size: 25px; /* Adjust the font size as needed */
+    }
+  }
 
   @media (max-width: 576px) {
     #theme-photo {
@@ -279,6 +335,60 @@ h7,h8,h9,h10,h11,h12{
     }
   }
 
+  @media (min-width: 768px) {
+    .footer {
+      padding: 0 5rem; /* px-5 for medium and large screens */
+    }
+  }
+
+  @media (max-width: 767px) {
+    .footer {
+      padding: 0 1rem; /* px-3 for small screens */
+    }
+  }
+
+  @media (min-width: 768px) {
+    .card {
+      margin: 0 2rem 0;
+    }
+  }
+
+  @media (min-width: 768px) {
+    .row-featurette {
+      margin: 0 3rem 0 3rem;
+    }
+  }
+
+  @media (max-width: 576px) {
+    .row-featurette {
+      margin: 0 3rem 0 3rem; ;
+    }
+  }
+  @media (max-width: 576px) {
+    .row-featurette p{
+      font-size: smaller ;
+    }
+  }
+
+  @media (min-width: 768px) {
+    #myCarousel {
+      margin: 2rem 3rem 6rem ;
+    }
+  }
+
+  @media (max-width: 576px) {
+    #myCarousel {
+      margin: 1rem 2rem 4rem ;
+    }
+  }
+
+  @media (max-width: 576px) {
+    .h3 {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  }
 
   .b-example-divider {
     width: 100%;
