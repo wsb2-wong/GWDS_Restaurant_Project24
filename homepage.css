@@ -65,17 +65,22 @@ body {
   }
 }
 
-h2, h3, h4, h5, h6, .menu, .navbar li{
+h2, h3, h4, h5, h6, h13, .card-body a, .menu, .navbar li{
   font-family: "cooper-black-std", serif;
   font-weight: 400;
   font-style: normal;
+}
+
+.card-body a,
+.menu a{
+  font-size: medium;
 }
 
 h2, h3,h13, h14{
   color: #febd2e;
 }
 
-h,p{
+h,p, .nav-item-footer .nav-link{
   font-family: "baileywick-jf-gothic", sans-serif;
   font-weight: 400;
   font-style: normal;
@@ -344,6 +349,10 @@ h7,h8,h9,h10,h11,h12{
     animation: fade-in 1s ease-out forwards;
   }
   
+  ul{
+    list-style: none;
+  }
+
   @keyframes fade-in {
     0% {
       opacity: 0;
