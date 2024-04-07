@@ -93,6 +93,10 @@
           <a class="navbar-brand " href="#">
             <img src="bootstrap-5.3.3-dist.png" alt="Logo" width="70" height="70">
           </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0" style="color: #febd2e;">
               <li class="nav-item dropdown">
@@ -120,7 +124,29 @@
         </div>
       </nav>
 
-    
+
+
+
+            <script>
+          // Get the toggler button
+          var togglerButton = document.querySelector('.navbar-toggler');
+
+          // Add click event listener to the toggler button
+          togglerButton.addEventListener('click', function() {
+            // Toggle the collapse state of the navbar
+            var navbarCollapse = document.querySelector('.navbar-collapse');
+            if (navbarCollapse.classList.contains('show')) {
+              navbarCollapse.classList.remove('show');
+            } else {
+              navbarCollapse.classList.add('show');
+            }
+          });
+        </script>
+
+
+
+
+
 
 
 <main>
@@ -130,11 +156,11 @@
     </section>
     
     <section class="section-two">
-        <p class="card-text mt-4"><strong> Magic Meal, Where Prices Bow and Hearts Reveal</p></strong>
+        <p class="card-text mt-4"><strong>At Magic Meal, let's make a deal, where every plate's a happy squeal</p></strong>
     </section>
     
     <section class="section-three">
-        <img src="trading_food.jpg" class="card-img mt-5 mb-5"  id="theme-photo">
+        <img src="theme_photo_edit拷貝.jpg" class="card-img mt-5 mb-5"  id="theme-photo">
     </section>
 
 
@@ -153,21 +179,21 @@
   <div class="container marketing ">
     <div class="row mb-5">
       <div class="col-lg-4 d-none d-lg-block ">
-        <img src="fried-rice-with-curry-chicken.jpeg" class="bd-placeholder-img rounded-circle img-fluid" width="270" height="270" role="img" aria-label="Placeholder" alt="Placeholder Image">
+        <img src="fried-rice-with-curry-chicken.jpeg" class="bd-placeholder-img1 rounded-circle img-fluid" width="270" height="270" role="img" aria-label="Placeholder" alt="Placeholder Image">
         <h4 class="fw-normal mt-5"> <strong>FRIED RICE WITH CURRY CHICKEN</strong></h4>
         <p><strong>$49</strong></p>
         <p>Thai Spicy Oil Curry Rice, a tantalizing explosion of flavors in every bite.</p>
       </div>
 
       <div class="col-lg-4">
-        <img src="chicken-chop-toast.jpeg" class="bd-placeholder-img rounded-circle img-fluid" width="330" height="330" role="img" aria-label="Placeholder" alt="Placeholder Image">
+        <img src="chicken-chop-toast.jpeg" class="bd-placeholder-img1 rounded-circle img-fluid" width="330" height="330" role="img" aria-label="Placeholder" alt="Placeholder Image">
         <h5 class="fw-normal mt-5"><strong>BRITISH STYLE CHICKEN CHOP TOAST</strong></h5>
         <p><strong>$59</strong></p>
         <p>Experience culinary bliss with our Thin Toast with Tomato and Lemon Sauce and Chicken. Shock your taste buds today!</p>
       </div>
 
       <div class="col-lg-4 d-none d-lg-block">
-        <img src="chicken-soup.webp" class="bd-placeholder-img rounded-circle img-fluid" width="270" height="270" role="img" aria-label="Placeholder" alt="Placeholder Image">
+        <img src="chicken-soup.webp" class="bd-placeholder-img1 rounded-circle img-fluid" width="270" height="270" role="img" aria-label="Placeholder" alt="Placeholder Image">
         <h6 class="fw-normal mt-5"><strong>CHICKEN CONSOMM </strong></h6>
         <p><strong>$29</strong></p>
         <p>Chicken soup with green onion, lets have a healthy morning.</p>
@@ -193,7 +219,9 @@
       <h20>WE WILL HAVE SEASONABLE MENU</h20>
     </div>
        <div class="col-12"></div>
-      <p class="opacity-75">In every season, we will launch some special dishes.<br>In this summer, we will have....</p>
+      <p class="opacity-75">n every season, we unveil special dishes<br>
+        This summer, sweet meets sour, granting wishes<br>
+        Neutralizing life's sour and bitter strife</p>
       </div>
     </div>
     </section>
@@ -250,16 +278,18 @@
 
 
       <div class="row-featurette">
-        <div class="col-md-6" id="WHO ARE WE">
+        <div class="col-6" id="WHO ARE WE">
           <h2 class="featurette-heading fw-normal lh-1">WHO ARE WE</h2>
           <p class="lead">Hello, we are MIKE and MINDY. 
             We are now in the process of divesting from a sustainable farming family business.<br>
             We have started a nonprofit organization (NPO) to help combat food waste created by the local major supermarkets and distributors in their area.</p>
         </div>
-        <div class="col-md-6 d-flex align-items-center justify-content-center">
+        <div class="mikemindy col-6 d-flex align-items-center justify-content-center">
           <img src="young adults.jpeg" class="Mike&Mindy img-fluid" id="profile-image">
         </div>
       </div>
+
+
 
 
 
@@ -274,7 +304,7 @@
               <p class="card-text"><strong>"Pay As You Feel"</strong><br>
                 We divert food waste into a sustainable restaurant situation where people can pay if they can, and if they are unable, they can still get a meal of nourishing food for themselves and their family.<br>
                 Our goal is to bring nourishing food to struggling individuals and families while preserving dignity and autonomy for the individual.<br>
-                <a href="#" class="btn btn-primary mt-3"
+                <a href="/Users/wongwingsum/Documents/1htmlcss/24_Restaurant_project/GWDS_Restaurant_JoinUs/JoinUs.index.html" class="btn btn-primary mt-3"
                   style="--bs-btn-padding-y: .75rem; --bs-btn-padding-x: .60rem; --bs-btn-font-size: .75rem;">
                   Let's Join Us
                 </a>
@@ -290,7 +320,7 @@
               <h5 class="card-title">HOW WE OPERATE</h5>
               <p class="card-text">Working with the local supermarkets and distributors, we will make a changeable daily menu using diverted fresh food and other foodstuffs that would otherwise go to the landfill.<br>
                 We have started a “pay as you feel” food box that is full of fresh, diverted food from the grocery stores and farmers markets available from select pick-up locations within the city on certain days.<br>
-                <a href="#" class="btn btn-primary mt-3"
+                <a href="/Users/wongwingsum/Documents/1htmlcss/24_Restaurant_project/GWDS_Restaurnat_Locatoin/loction.index.html" class="btn btn-primary mt-3"
                   style="--bs-btn-padding-y: .75rem; --bs-btn-padding-x: .60rem; --bs-btn-font-size: .75rem;">
                   Where is the food box
                 </a>
